@@ -1,0 +1,28 @@
+Checks:
+  - -*
+  - cppcoreguidelines-pro-type-member-init
+  - cppcoreguidelines-special-member-functions
+  - cppcoreguidelines-avoid-magic-numbers
+  - cppcoreguidelines-avoid-c-arrays
+  - modernize-use-nullptr
+  - modernize-use-auto
+  - modernize-use-default-member-init
+  - modernize-use-bool-literals
+  - modernize-avoid-bind
+  - readability-braces-around-statements
+  - readability-redundant-member-init
+  - readability-function-cognitive-complexity
+  - readability-identifier-naming
+  - bugprone-branch-clone
+  - bugprone-implicit-widening-of-multiplication-result
+  - bugprone-macro-parentheses
+HeaderFileExtensions: [h, hpp, hxx]
+ImplementationFileExtensions: [c, cpp, cxx]
+HeaderFilterRegex: (src|tests)/
+FormatStyle: file
+CheckOptions:
+  cppcoreguidelines-pro-type-member-init.IgnoreArrays: true
+  cppcoreguidelines-pro-type-member-init.UseAssignment: true
+  modernize-use-bool-literals.IgnoreMacros: false
+  modernize-use-default-member-init.IgnoreMacros: false
+  modernize-use-default-member-init.UseAssignment: true
