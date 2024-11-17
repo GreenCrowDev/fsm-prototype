@@ -1,11 +1,6 @@
-name: CMake build
+name: Build and Test
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [workflow_call]
 
 jobs:
   build:
